@@ -14,8 +14,7 @@ a {
 
 body {
   background-color: rgb(245, 245, 245);
-  max-width: 375px;
-  margin: 0 auto;
+  width: 375px;
 }
 
 header {
@@ -32,6 +31,10 @@ header {
   color: #6070ff;
 }
 
+.x-mark {
+  color: white;
+}
+
 .logo {
   font-weight: 700;
   font-size: 18px;
@@ -39,8 +42,47 @@ header {
   text-decoration: none;
 }
 
+.popUpNav {
+  padding: 50px 20px;
+  position: absolute;
+  list-style: none;
+  font-weight: 600;
+  font-size: 32px;
+  color: white;
+  background-color: rgba(53, 53, 255, 0.79);
+  width: 100%;
+  height: 100vh;
+  transition-duration: 0.5s;
+  z-index: 100;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.popUpNav .mainXmark {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.popUpNav ul {
+  list-style-type: none;
+}
+
 .social-icons li a {
   color: #505f79;
+}
+
+.popUpNav .mainXmark a {
+  font-size: 20px;
+}
+
+.nav-items-2 .items {
+  margin-bottom: 40px;
+}
+
+.nav-items-2 .items a {
+  color: white;
 }
 
 .nav-items {
@@ -48,10 +90,10 @@ header {
 }
 
 .main-1 {
-  min-height: 718px;
   display: flex;
   flex-direction: column;
   padding: 102px 24px 0 24px;
+  height: 718px;
   background-image: url("images/background-1.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -86,7 +128,7 @@ header {
 
 .social-icons li {
   margin-right: 20px;
-  min-height: 10px;
+  height: 10px;
 }
 
 .cards-section {
@@ -100,7 +142,7 @@ header {
   align-items: center;
   padding: 16px;
   gap: 12px;
-  max-width: 327px;
+  width: 327px;
   background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
@@ -126,7 +168,7 @@ header {
 
 .job {
   display: inline-block;
-  max-width: 161px;
+  width: 161px;
 }
 
 .job li {
@@ -218,6 +260,71 @@ header {
   border-color: grey;
 }
 
+.card-popup-window {
+  width: 343px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  visibility: hidden;
+  position: absolute;
+  background-color: white;
+  left: 0;
+  top: 0;
+}
+
+.name-popup-window {
+  font-weight: 700;
+  font-size: 32px;
+  color: #172b4d;
+}
+
+.job-popup-window li {
+  font-weight: 600;
+  font-size: 13px;
+  color: #7a869a;
+}
+
+.dummy-text {
+  font-weight: 400;
+  font-size: 15px;
+  color: #344563;
+}
+
+.skills-popup-window {
+  margin: 10px;
+  padding: 10px;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ebecf0;
+  border-top: hidden;
+  border-left: hidden;
+  border-right: hidden;
+}
+
+.see-live {
+  width: 136px;
+  height: 48px;
+  display: inline;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  margin-right: 12px;
+}
+
+.see-source {
+  width: 146px;
+  height: 48px;
+  display: inline;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.icons-popup-window {
+  margin-left: 13px;
+}
+
 .about-myself-section {
   display: flex;
   flex-wrap: wrap;
@@ -240,23 +347,23 @@ header {
   padding-bottom: 15px;
 }
 
-#connect {
+#connect-2 {
   display: block;
-  max-width: 327px;
+  width: 327px;
 }
 
 #social-icons-2 {
   display: flex;
   flex-direction: row;
   padding-top: 10px;
-  max-width: 100%;
+  width: 100%;
 }
 
 #resume {
   display: block;
   margin: 40px 0;
   margin-left: -10px;
-  max-width: 170px;
+  width: 170px;
 }
 
 .prog-langs {
@@ -276,12 +383,12 @@ header {
 .languages::after {
   content: url("images/arrow-3.png");
   position: absolute;
-  left: 260px;
+  left: 220px;
 }
 
 .prog-langs li {
   width: 327px;
-  min-height: 66.72px;
+  height: 66.72px;
   background: #f7f7f9;
   border-radius: 8px;
   margin-bottom: 12px;
@@ -337,7 +444,7 @@ header {
   border-right: hidden;
   border-color: #dfe1e6;
   border-width: 1px;
-  min-height: 70px;
+  height: 70px;
   position: relative;
   width: 100%;
 }
@@ -346,7 +453,7 @@ header {
   content: url("images/arrow.png");
   position: absolute;
   top: 15px;
-  left: 260px;
+  left: 220px;
 }
 
 .contact-form-section {
@@ -393,29 +500,29 @@ form {
 }
 
 #name {
-  min-height: 48px;
+  height: 48px;
   padding: 15px 16px;
   font-weight: 400;
   font-size: 17px;
 }
 
 #email {
-  min-height: 48px;
+  height: 48px;
   padding: 15px 16px;
   font-weight: 400;
   font-size: 17px;
 }
 
 #textarea {
-  min-height: 170px;
+  height: 170px;
   padding: 15px 16px;
   font-weight: 400;
   font-size: 15px;
 }
 
 #submit {
-  min-height: 48px;
-  max-width: 140px;
+  height: 48px;
+  width: 140px;
   padding: 12px 16px;
   font-weight: 500;
   font-size: 17px;
@@ -446,4 +553,294 @@ form {
   background-color: #fff;
   color: grey;
   border-color: grey;
+}
+
+@media (min-width: 768px) {
+  body {
+    width: 100%;
+  }
+
+  .popUpNav {
+    display: none;
+  }
+
+  header {
+    height: 72px;
+  }
+
+  .nav-items {
+    display: inline-block;
+    margin-right: 154px;
+  }
+
+  .nav-items .items {
+    display: inline;
+    margin-left: 32px;
+  }
+
+  .nav-items .items a {
+    color: #344563;
+  }
+
+  .bars {
+    display: none;
+  }
+
+  .x-mark {
+    display: none;
+  }
+
+  .main-1 {
+    background: #fff;
+    background-image: url("images/Header-bg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 844px;
+    border-bottom-left-radius: 11%;
+    padding: 314px 260px 0 260px;
+    margin-bottom: 142px;
+  }
+
+  .logo {
+    margin-left: 155px;
+  }
+
+  .name {
+    font-weight: 700;
+    font-size: 48px;
+  }
+
+  .description {
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 35px;
+  }
+
+  .connect {
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  .card {
+    width: 1156px;
+    height: 496px;
+    display: grid;
+    align-items: stretch;
+    padding: 24px;
+    grid-template-columns: 544px 496px;
+    grid-template-rows: repeat(6, auto);
+    column-gap: 46px;
+    row-gap: 30px;
+  }
+
+  #card-1 img {
+    width: 544px;
+    height: 448px;
+    grid-row: 1 / 7;
+  }
+
+  #card-2 {
+    grid-template-columns: 496px 544px;
+    padding-left: 44px;
+  }
+
+  #card-2 img {
+    width: 544px;
+    height: 448px;
+    grid-row: 1 / 7;
+    grid-column: 2;
+  }
+
+  #card-3 img {
+    width: 544px;
+    height: 448px;
+    grid-row: 1 / 7;
+  }
+
+  #card-4 {
+    grid-template-columns: 496px 544px;
+    padding-left: 44px;
+  }
+
+  #card-4 img {
+    width: 544px;
+    height: 448px;
+    grid-row: 1 / 7;
+    grid-column: 2;
+  }
+
+  .profile-name {
+    font-weight: 700;
+    font-size: 40px;
+    margin: 24px 0 0 0;
+  }
+
+  .canopy {
+    font-weight: 500;
+    font-size: 18px;
+    margin: 0 32px 0 0;
+  }
+
+  .job {
+    display: inline;
+    width: auto;
+  }
+
+  .job li {
+    font-weight: 400;
+    font-size: 18px;
+  }
+
+  .primary-text {
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  .skills {
+    font-weight: 500;
+    font-size: 12px;
+  }
+
+  .projects-link {
+    font-weight: 500;
+    font-size: 17px;
+    width: 127px;
+    height: 48px;
+  }
+
+  .about-myself-section {
+    background: #fff;
+    padding: 142px;
+    display: grid;
+    grid-template-columns: 0.4fr 0.6fr;
+    grid-template-rows: 1.13fr 01fr 0.5fr 0.5fr 0.5fr;
+    column-gap: 50px;
+    row-gap: 30px;
+    width: 100%;
+  }
+
+  .about-myself {
+    font-weight: 700;
+    font-size: 40px;
+    order: 1;
+  }
+
+  .about-myself-text {
+    width: auto;
+    font-weight: 400;
+    font-size: 16px;
+    order: 3;
+  }
+
+  #connect-2 {
+    order: 5;
+    margin-top: -15px;
+  }
+
+  #social-icons-2 {
+    order: 7;
+    margin-top: -30px;
+  }
+
+  #resume {
+    order: 9;
+    margin-top: -30px;
+  }
+
+  .languages {
+    font-weight: 500;
+    font-size: 20px;
+    display: block;
+    order: 2;
+    margin-top: 35px;
+  }
+
+  .languages::after {
+    content: url("images/arrow-3.png");
+    position: absolute;
+    left: 560px;
+  }
+
+  .prog-langs {
+    order: 4;
+  }
+
+  .prog-langs li {
+    font-weight: 500;
+    font-size: 15px;
+    width: 122px;
+    height: 120px;
+    display: inline-block;
+    padding: 76px 12px 20px 12px;
+    margin-top: -100px;
+  }
+
+  .frameworks-sills {
+    font-weight: 500;
+    font-size: 20px;
+  }
+
+  .frameworks-sills::after {
+    content: url("images/arrow.png");
+    position: absolute;
+    top: 15px;
+    left: 560px;
+  }
+
+  #fr-1 {
+    order: 6;
+  }
+
+  #fr-2 {
+    order: 8;
+  }
+
+  .contact-form-section {
+    background-image: url("images/contact-form-background-shapes.png");
+    align-content: center;
+  }
+
+  .contact-form-title {
+    font-weight: 700;
+    font-size: 40px;
+  }
+
+  .contact-form-content {
+    font-weight: 400;
+    font-size: 20px;
+    width: 569px;
+  }
+
+  .form {
+    align-items: center;
+  }
+
+  #name {
+    font-weight: 400;
+    font-size: 17px;
+    width: 447px;
+  }
+
+  #email {
+    font-weight: 400;
+    font-size: 17px;
+    width: 447px;
+  }
+
+  #textarea {
+    font-weight: 400;
+    font-size: 15px;
+    width: 447px;
+    height: 170px;
+  }
+
+  #submit {
+    font-weight: 500;
+    font-size: 17px;
+    width: 142px;
+  }
+
+  .home-indicator {
+    display: none;
+  }
 }
