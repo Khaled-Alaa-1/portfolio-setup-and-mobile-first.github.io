@@ -527,7 +527,7 @@ form {
   font-weight: 500;
   font-size: 17px;
   color: #6070ff;
-  transition: 0.7s ease;
+  transition: 0.7s ease-in-out;
 }
 
 #submit:enabled {
