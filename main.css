@@ -383,7 +383,7 @@ header {
 .languages::after {
   content: url("images/arrow-3.png");
   position: absolute;
-  left: 260px;
+  left: 220px;
 }
 
 .prog-langs li {
@@ -453,7 +453,7 @@ header {
   content: url("images/arrow.png");
   position: absolute;
   top: 15px;
-  left: 260px;
+  left: 220px;
 }
 
 .contact-form-section {
@@ -712,10 +712,11 @@ form {
     background: #fff;
     padding: 142px;
     display: grid;
-    grid-template-columns: 447px 684px;
-    grid-template-rows: 114px 102px 47px 47px 48px;
+    grid-template-columns: 0.4fr 0.6fr;
+    grid-template-rows: 1.13fr 01fr 0.5fr 0.5fr 0.5fr;
     column-gap: 50px;
     row-gap: 30px;
+    width: 100%;
   }
 
   .about-myself {
@@ -757,7 +758,7 @@ form {
   .languages::after {
     content: url("images/arrow-3.png");
     position: absolute;
-    left: 600px;
+    left: 560px;
   }
 
   .prog-langs {
@@ -783,7 +784,7 @@ form {
     content: url("images/arrow.png");
     position: absolute;
     top: 15px;
-    left: 600px;
+    left: 560px;
   }
 
   #fr-1 {
