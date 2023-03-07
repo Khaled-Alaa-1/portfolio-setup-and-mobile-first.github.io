@@ -281,7 +281,7 @@ header {
 .job-popup-window li {
   font-weight: 600;
   font-size: 13px;
-  color: #7a869a;
+  color: #7A869A;
 }
 
 .dummy-text {
@@ -383,7 +383,7 @@ header {
 .languages::after {
   content: url("images/arrow-3.png");
   position: absolute;
-  left: 220px;
+  left: 260px;
 }
 
 .prog-langs li {
@@ -453,7 +453,7 @@ header {
   content: url("images/arrow.png");
   position: absolute;
   top: 15px;
-  left: 220px;
+  left: 260px;
 }
 
 .contact-form-section {
@@ -712,11 +712,10 @@ form {
     background: #fff;
     padding: 142px;
     display: grid;
-    grid-template-columns: 0.4fr 0.6fr;
-    grid-template-rows: 1.13fr 01fr 0.5fr 0.5fr 0.5fr;
+    grid-template-columns: 447px 684px;
+    grid-template-rows: 114px 102px 47px 47px 48px;
     column-gap: 50px;
     row-gap: 30px;
-    width: 100%;
   }
 
   .about-myself {
@@ -758,7 +757,7 @@ form {
   .languages::after {
     content: url("images/arrow-3.png");
     position: absolute;
-    left: 560px;
+    left: 600px;
   }
 
   .prog-langs {
@@ -784,7 +783,7 @@ form {
     content: url("images/arrow.png");
     position: absolute;
     top: 15px;
-    left: 560px;
+    left: 600px;
   }
 
   #fr-1 {
