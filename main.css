@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
@@ -383,7 +387,7 @@ header {
 .languages::after {
   content: url("images/arrow-3.png");
   position: absolute;
-  left: 220px;
+  left: 260px;
 }
 
 .prog-langs li {
@@ -453,7 +457,7 @@ header {
   content: url("images/arrow.png");
   position: absolute;
   top: 15px;
-  left: 220px;
+  left: 260px;
 }
 
 .contact-form-section {
@@ -712,11 +716,10 @@ form {
     background: #fff;
     padding: 142px;
     display: grid;
-    grid-template-columns: 0.4fr 0.6fr;
-    grid-template-rows: 1.13fr 01fr 0.5fr 0.5fr 0.5fr;
+    grid-template-columns: 447px 684px;
+    grid-template-rows: 114px 102px 47px 47px 48px;
     column-gap: 50px;
     row-gap: 30px;
-    width: 100%;
   }
 
   .about-myself {
@@ -758,7 +761,7 @@ form {
   .languages::after {
     content: url("images/arrow-3.png");
     position: absolute;
-    left: 560px;
+    left: 600px;
   }
 
   .prog-langs {
@@ -784,7 +787,7 @@ form {
     content: url("images/arrow.png");
     position: absolute;
     top: 15px;
-    left: 560px;
+    left: 600px;
   }
 
   #fr-1 {
