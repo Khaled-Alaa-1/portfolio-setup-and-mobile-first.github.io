@@ -1,10 +1,10 @@
 /* mobile menu */
-let bars = document.querySelector('.bars');
-let xMark = document.querySelector('.x-mark');
-let popUpNav = document.querySelector('.popUpNav');
-let header = document.querySelector('header');
-let main1 = document.querySelector('.main-1');
-let items = document.querySelectorAll('.nav-items-2 .items');
+const bars = document.querySelector('.bars');
+const xMark = document.querySelector('.x-mark');
+const popUpNav = document.querySelector('.popUpNav');
+const header = document.querySelector('header');
+const main1 = document.querySelector('.main-1');
+const items = document.querySelectorAll('.nav-items-2 .items');
 bars.addEventListener('click', () => {
   popUpNav.style.visibility = 'visible';
   popUpNav.style.opacity = '1';
