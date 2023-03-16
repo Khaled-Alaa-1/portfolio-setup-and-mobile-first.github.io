@@ -118,6 +118,12 @@ Example:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+👤 **khaled alaa**
+
+- GitHub: [Khaled-Alaa-1](https://github.com/Khaled-Alaa-1)
+- Twitter: [@Khaled86756991](https://twitter.com/Khaled86756991)
+- LinkedIn: [Khaled Alaa](https://www.linkedin.com/in/khaled-alaa-594bb9256/)
+
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
